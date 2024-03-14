@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+nav{
+    background-color: grey;
+    color:black;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: 0px;
+    padding: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 18px;
+    
+}
+
+nav ul li:hover {
+    color: #ff6600;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 600px;
+    margin-top: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    position: relative;
+    animation: animateBox 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes animateBox {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+#02 {
+    width: 300px; /* Define a width for your div */
+    margin: 50px auto 0; /* Center the div horizontally */
+    text-align: center; /* Center the content inside the div */
+}
+
+.animated-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.animated-button::before {
+    /* ... (rest of the button styles remain the same) */
+}
+
+#img {
+    margin: 0;
+    padding: 0;
+    background-image: url('img/back.jpg'); /* Replace 'path/to/your/image.jpg' with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Add any other styles or properties you need for your page */
+}
+
+.animated-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.animated-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: width 0.3s ease-out, height 0.3s ease-out, top 0.3s ease-out, left 0.3s ease-out;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+.animated-button:hover::before {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+}
+
+.animated-button span {
+    z-index: 1;
+    position: relative;
+}
+
